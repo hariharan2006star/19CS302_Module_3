@@ -1,62 +1,43 @@
 # EX 15 C program that reads a one-dimensional array of integers and replaces all even elements with 'E'.
-
 ## DATE:
-
 ## AIM:
 To write a C program that reads a one-dimensional array of integers and replaces all even elements with 'E'.
 
 ## Algorithm
+1.Start.
 
-1. Start the program.
-2. Declare array and variables.
-3. Get the size of the array.
-4. Read the array elements from the user.
-5. Traverse the array using loop.
-6. Check whether each element is even.
-7. If even, print 'E'.
-8. Otherwise, print the element.
-9. Stop the program.
+2.Declare a array size value of type int.
 
+3.Prompt the user to enter a value.
+
+4.Read the value using scanf.
+
+5.Initialize array elements.
+
+6.Replace all even elements to E
+
+7.End.
 ## Program:
-
-```c
-#include <stdio.h>
-
-int main()
-{
-    int a[10], n, i;
-
-    scanf("%d", &n);
-
-    for(i = 0; i < n; i++)
-    {
-        scanf("%d", &a[i]);
-    }
-
-    for(i = 0; i < n; i++)
-    {
-        if(a[i] % 2 == 0)
-        {
-            printf("E ");
-        }
-        else
-        {
-            printf("%d ", a[i]);
-        }
-    }
-
-    return 0;
+```#include <stdio.h>
+int main() {
+ int arr[100], n;
+ scanf("%d", &n);
+ for (int i = 0; i < n; i++) {
+ scanf("%d", &arr[i]);
+ }
+ for (int i = 0; i < n; i++) {
+ if (arr[i] % 2 == 0)
+ printf("E ");
+ else
+ printf("%d ", arr[i]);
+ }
+ printf("\n");
+ return 0;
 }
 ```
 
 ## Output:
-
-```text
-5
-1 2 3 4 5
-
-1 E 3 E 5
-```
+<img width="992" height="212" alt="image" src="https://github.com/user-attachments/assets/a12b30dc-4edb-4274-92bf-d1949119fbd2" />
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
