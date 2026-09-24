@@ -1,67 +1,43 @@
 # EX 12 C program to check whether the given number is prime or not using function without return type and with arguments.
-
 ## DATE:
-
 ## AIM:
 To write a C program to check whether the given number is prime or not using function without return type and with arguments.
 
 ## Algorithm
+1.Start 
 
-1. Start the program.
-2. Declare a function to check prime number.
-3. Get the number from the user.
-4. Pass the number to the function.
-5. Check whether the number is divisible by any number other than 1 and itself.
-6. If divisible, display Not Prime.
-7. Otherwise, display Prime.
-8. Stop the program.
+2. Declare the variable i.
 
+3. Read the value given using scanf.
+
+4. Check whether the given number is prime or not using if-else statement condition.
+
+5. If true,print ("%d is a prime number.",i).
+
+6. If false, print ("%d is not a prime number.",i).
+
+7. End.
 ## Program:
-
-```c
-#include <stdio.h>
-
-void prime(int n)
-{
-    int i, flag = 0;
-
-    for(i = 2; i < n; i++)
-    {
-        if(n % i == 0)
-        {
-            flag = 1;
-            break;
-        }
-    }
-
-    if(flag == 0)
-    {
-        printf("Prime");
-    }
-    else
-    {
-        printf("Not Prime");
-    }
-}
-
+```
 int main()
 {
-    int n;
-
-    scanf("%d", &n);
-
-    prime(n);
-
-    return 0;
+int i; 
+scanf("%d",&i);
+if(i%2==1 && i%1==0)
+{
+printf("%d is a prime number.",i);
 }
+else
+{
+printf("%d is not a prime number.",i);
+}
+return 0;
+}
+
 ```
 
 ## Output:
+<img width="682" height="233" alt="image" src="https://github.com/user-attachments/assets/e54fb0da-91dc-4ab3-8b07-6fa6802cbfe5" />
 
-```text
-7
-
-Prime
-```
 ## Result:
 Thus the program was executed and the output was verified successfully.
